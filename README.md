@@ -63,7 +63,7 @@ python save_reprs_clean.py -a resnet18 --batch-size 1024 --gpu 0 --dataset_type 
      --pretrained logs/resnet18_simsiam/files/checkpoint_0099.pth.tar  
 python test_collapse.py data/resnet18_exp1/imagenet/train_reprs_e0.pt --type svd
 ```
-A notebook is provided to load, plot, and compute the resulting collapse metrics. 
+Coming soon: a notebook to load, plot, and compute the resulting collapse metrics. 
 ## Citation 
 ```
 @article{SimSiamCollapse,
