@@ -1,0 +1,11 @@
+name: noncontrastive-ssl
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - pip=21.0.1
+  - pip:
+      - pandas
+      - wandb
+      - timm==0.4.9
+# pytorch

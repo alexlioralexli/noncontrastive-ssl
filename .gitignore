@@ -1,0 +1,8 @@
+.idea/
+data/
+logs/
+*/__pycache__
+plotting/
+.DS_Store
+__pycache__/
+slurm_logs/
