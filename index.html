@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- ======================================================================= -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<style type="text/css">
+  body {
+    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  h1 {
+    font-weight:300;
+    max-width: 100%;
+  }
+
+  div {
+    max-width: 95%;
+    margin:auto;
+    padding: 10px;
+  }
+
+  .table-like {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  table {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    max-width: 1100px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+</style>
+<!-- ======================================================================= -->
+
+<!-- Start : Google Analytics Code -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64069893-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-64069893-4');
+</script> -->
+<!-- End : Google Analytics Code -->
+
+<script type="text/javascript" src="resources/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+<div max-width=100%>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" type="image/png" href="resources/seal_icon.png" />
+  <title>Understanding Collapse in Non-Contrastive Siamese Representation Learning</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://noncontrastive-ssl.github.io/" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <meta property="og:site_name" content="Understanding Collapse in Non-Contrastive Siamese Representation Learning" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="Understanding Collapse in Non-Contrastive Siamese Representation Learning" />
+  <meta property="og:description" content="Li, Efros, Pathak. Understanding Collapse in Non-Contrastive Siamese Representation Learning. ECCV 2022." />
+  <meta property="og:url" content="https://learned-fourier-features.github.io/" />
+  <meta property="og:image" content="https://noncontrastive-ssl.github.io/resources/setting.png" />
+  <!-- <meta property="og:video" content="https://www.youtube.com/v/GftqnPWsCWw" /> -->
+
+  <meta property="article:publisher" content="https://github.com/alexlioralexli" />
+  <!-- <meta name="twitter:label1" content="Written by" />
+  <meta name="twitter:data1" content="Deepak Pathak" /> -->
+  <!-- <meta name="twitter:label2" content="Filed under" />
+  <meta name="twitter:data2" content="" /> -->
+  <meta name="twitter:site" content="@alexlioralexli" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+<body>
+      <br>
+      <center><span style="font-size:44px;font-weight:bold;">Understanding Collapse in Non-Contrastive Siamese Representation Learning</span></center><br/>
+      <div class="table-like" style="justify-content:space-evenly;max-width:500px;margin:auto;">
+          <div><center><span style="font-size:20px"><a href="http://alexanderli.com/" target="_blank">Alexander C. Li</a></span></center>
+          <center><span style="font-size:18px">CMU</span></center>
+          </div>
+          <div><center><span style="font-size:20px"><a href="http://people.eecs.berkeley.edu/~efros/" target="_blank">Alexei A. Efros</a></span></center>
+          <center><span style="font-size:18px">UC Berkeley</span></center>
+          </div>
+          <div><center><span style="font-size:20px"><a href="https://www.cs.cmu.edu/~dpathak/" target="_blank">Deepak Pathak</a></span></center>
+          <center><span style="font-size:18px">CMU</span></center>
+          </div>
+      </div>
+<!--       <table align=center width=600px style="padding-top:0px;padding-bottom:0px">
+          <tr>
+            <td align=center width=600px><center><span style="font-size:15px">* equal contribution</span></center></td>
+          <tr/>
+      </table> -->
+      <center><span style="font-size:20px;"><a href='https://eccv2022.ecva.net/program/'>ECCV 2022</a></span></center>
+
+      <div class="table-like" style="justify-content:space-evenly;max-width:450px;margin:auto;padding:5px">
+        <div><center><span style="font-size:28px"><a href="https://arxiv.org/abs/2209.15007">[Paper]</a></span></center></div>
+        <div><center><span style="font-size:28px"><a href='https://github.com/alexlioralexli/noncontrastive-ssl'>[GitHub Code]</a></span></center> </div>
+        <!-- <div><center><span style="font-size:28px"><a href='https://recorder-v3.slideslive.com/#/share?share=56428&s=9d965df2-8a34-4304-b4c0-cc0c60c46249' target="_blank">[Talk]</a></span></center> </div> -->
+      </div>
+
+      <center>
+      <center><a href="resources/eccv2022-poster.png"><img src="resources/eccv2022-poster.png" width="800px"></img></a><br></center>
+      <br>
+
+                      <!-- <div class="container" style="background-color:white; padding: 0px;">
+                    <div class="row m-2">
+
+                        <div class="col-md-12 col-xs-12 my-auto p-2">
+                            <p class="centered admin"></p>
+                                        <div class="sponsor-video-title text-muted"></div>
+            <div id="presentation-embed-38968832" class="slp my-auto"></div>
+            <script src='https://slideslive.com/embed_presentation.js'></script>
+            <script>
+            embed = new SlidesLiveEmbed('presentation-embed-38968832', {
+                presentationId: '38968832',
+                autoPlay: false, // change to true to autoplay the embedded presentation
+                verticalEnabled: true,
+                allowHiddenControlsWhenPaused: true,
+                hideTitle: true
+            });
+            </script>
+
+
+
+            
+                        </div>
+                    </div>
+                </div> -->
+
+      <div style="width:800px; margin:0 auto; text-align:left;">
+        Contrastive methods have led a recent surge in the performance of self-supervised representation learning (SSL). Recent methods like BYOL or SimSiam purportedly distill these contrastive methods down to their essence, removing bells and whistles, including the negative examples, that do not contribute to downstream performance. These "non-contrastive" methods work surprisingly well without using negatives even though the global minimum lies at trivial collapse. We empirically analyze these non-contrastive methods and find that SimSiam is extraordinarily sensitive to dataset and model size. In particular, SimSiam representations undergo partial dimensional collapse if the model is too small relative to the dataset size. We propose a metric to measure the degree of this collapse and show that it can be used to forecast the downstream task performance without any fine-tuning or labels. We further analyze architectural design choices and their effect on the downstream performance. Finally, we demonstrate that shifting to a continual learning setting acts as a regularizer and prevents collapse, and a hybrid between continual and multi-epoch training can improve linear probe accuracy by as many as 18 percentage points using ResNet-18 on ImageNet.
+      </div>
+      <br><hr>
+
+
+
+            <center id="sourceCode"><h1>Source Code</h1></center>
+            <div style="width:650px; margin:0 auto; text-align:center">
+            We have released our PyTorch code on the github page. Try our code!
+            </div>
+            <table align=center width=600px>
+              <tr>
+                <!-- <p style="margin-top:4px;"></p> -->
+                <td width=600px align=center>
+                  <center><span style="font-size:28px"><a href='https://github.com/alexlioralexli/noncontrastive-ssl'>[GitHub]</a></span></center>
+                </td>
+              </tr>
+            </table>
+            <br><hr>
+
+              <center><h1>Paper and Bibtex</h1></center>
+              <table align=center width=850px>
+              <tr>
+              <td width="30%" align=left>
+              <!-- <p style="margin-top:4px;"></p> -->
+              <a href="https://arxiv.org/pdf/2209.15007.pdf"><img style="height:150px" src="resources/thumbnail.jpeg"/></a>
+              <center>
+              <span style="font-size:20pt"><a href="https://arxiv.org/pdf/2209.15007.pdf">[Paper]</a>
+              <span style="font-size:20pt"><a href="https://arxiv.org/abs/2209.15007">[ArXiv]</a>
+              <!-- <span style="font-size:20pt"><a href="resources/slides.pdf">[Slides]</a></span>
+              <span style="font-size:20pt"><a href="resources/poster.pdf">[Poster]</a></span> -->
+              </center>
+              </td>
+              <td width="6%" align=center>
+              </td>
+              <td width="64%" align=left>
+              <!-- <p style="margin-top:4px;"></p> -->
+              <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Alexander C. Li, Alexei A. Efros, Deepak Pathak. <b>Understanding Collapse in Non-Contrastive Siamese Representation Learning.</b> ECCV 2021.</span></p>
+              <!-- <p style="margin-top:20px;"></p> -->
+              <span style="font-size:20pt"><a shape="rect" href="javascript:togglebib('learnedfourierfeatures2021_bib')" class="togglebib">[Bibtex]</a></span>
+              </td>
+              </tr>
+              <tr>
+              <td width="30%" align=left>
+              </td>
+              <td width="6%" align=center>
+              </td>
+              <td width="64%" align=left>
+                <div class="paper" id="learnedfourierfeatures2021_bib">
+<pre xml:space="preserve">
+@article{SimSiamCollapse,
+     title={Understanding Collapse in Non-Contrastive 
+            Siamese Representation Learning},
+     author={Li, Alexander Cong and Efros, Alexei A. and Pathak, Deepak},
+     journal={ECCV},     
+     year={2022}
+}</pre>
+                </div>
+                </td>
+                </tr>
+            </table>
+          <br><hr>
+      </table>
+
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+</div>
+</body>
+</html>
