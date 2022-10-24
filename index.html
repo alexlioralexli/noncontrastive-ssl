@@ -178,7 +178,7 @@
   <meta property="og:type" content="video.other" />
   <meta property="og:title" content="Understanding Collapse in Non-Contrastive Siamese Representation Learning" />
   <meta property="og:description" content="Li, Efros, Pathak. Understanding Collapse in Non-Contrastive Siamese Representation Learning. ECCV 2022." />
-  <meta property="og:url" content="https://learned-fourier-features.github.io/" />
+  <meta property="og:url" content="https://noncontrastive-ssl.github.io/" />
   <meta property="og:image" content="https://noncontrastive-ssl.github.io/resources/setting.png" />
   <!-- <meta property="og:video" content="https://www.youtube.com/v/GftqnPWsCWw" /> -->
 
@@ -250,12 +250,11 @@
                     </div>
                 </div> -->
 
+                <center id="abstract"><h1>Abstract</h1></center>
       <div style="width:800px; margin:0 auto; text-align:left;">
         Contrastive methods have led a recent surge in the performance of self-supervised representation learning (SSL). Recent methods like BYOL or SimSiam purportedly distill these contrastive methods down to their essence, removing bells and whistles, including the negative examples, that do not contribute to downstream performance. These "non-contrastive" methods work surprisingly well without using negatives even though the global minimum lies at trivial collapse. We empirically analyze these non-contrastive methods and find that SimSiam is extraordinarily sensitive to dataset and model size. In particular, SimSiam representations undergo partial dimensional collapse if the model is too small relative to the dataset size. We propose a metric to measure the degree of this collapse and show that it can be used to forecast the downstream task performance without any fine-tuning or labels. We further analyze architectural design choices and their effect on the downstream performance. Finally, we demonstrate that shifting to a continual learning setting acts as a regularizer and prevents collapse, and a hybrid between continual and multi-epoch training can improve linear probe accuracy by as many as 18 percentage points using ResNet-18 on ImageNet.
       </div>
       <br><hr>
-
-
 
             <center id="sourceCode"><h1>Source Code</h1></center>
             <div style="width:650px; margin:0 auto; text-align:center">
@@ -276,21 +275,28 @@
               <tr>
               <td width="30%" align=left>
               <!-- <p style="margin-top:4px;"></p> -->
-              <a href="https://arxiv.org/pdf/2209.15007.pdf"><img style="height:150px" src="resources/thumbnail.jpeg"/></a>
-              <center>
-              <span style="font-size:20pt"><a href="https://arxiv.org/pdf/2209.15007.pdf">[Paper]</a>
-              <span style="font-size:20pt"><a href="https://arxiv.org/abs/2209.15007">[ArXiv]</a>
+              <!-- <a href="https://arxiv.org/pdf/2209.15007.pdf"><img style="height:150px" src="resources/thumbnail.jpeg"/></a> -->
+              <!-- <div class="paper-thumbnail"> -->
+                <a href="https://arxiv.org/pdf/2209.15007.pdf">
+                    <img class="layered-paper-big" width="100%" src="resources/thumbnail.png" alt="Paper thumbnail."/>
+                </a>
+            <!-- </div> -->
+              <!-- <center> -->
+              <!-- <span style="font-size:20pt"><a href="https://arxiv.org/pdf/2209.15007.pdf">[Paper]</a> -->
+              <!-- <span style="font-size:20pt"><a href="https://arxiv.org/abs/2209.15007">[ArXiv]</a> -->
               <!-- <span style="font-size:20pt"><a href="resources/slides.pdf">[Slides]</a></span>
               <span style="font-size:20pt"><a href="resources/poster.pdf">[Poster]</a></span> -->
-              </center>
+              <!-- </center> -->
               </td>
               <td width="6%" align=center>
               </td>
               <td width="64%" align=left>
               <!-- <p style="margin-top:4px;"></p> -->
-              <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Alexander C. Li, Alexei A. Efros, Deepak Pathak. <b>Understanding Collapse in Non-Contrastive Siamese Representation Learning.</b> ECCV 2021.</span></p>
+              <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Alexander C. Li, Alexei A. Efros, Deepak Pathak. <b>Understanding Collapse in Non-Contrastive Siamese Representation Learning.</b> ECCV 2022.</span></p>
               <!-- <p style="margin-top:20px;"></p> -->
-              <span style="font-size:20pt"><a shape="rect" href="javascript:togglebib('learnedfourierfeatures2021_bib')" class="togglebib">[Bibtex]</a></span>
+              <span style="font-size:20pt"><a href="https://arxiv.org/pdf/2209.15007.pdf">[Paper]</a>
+              <span style="font-size:20pt"><a href="https://arxiv.org/abs/2209.15007">[ArXiv]</a>
+              <span style="font-size:20pt"><a shape="rect" href="javascript:togglebib('simsiamcollapse2022_bib')" class="togglebib">[Bibtex]</a></span>
               </td>
               </tr>
               <tr>
@@ -299,7 +305,7 @@
               <td width="6%" align=center>
               </td>
               <td width="64%" align=left>
-                <div class="paper" id="learnedfourierfeatures2021_bib">
+                <div class="paper" id="simsiamcollapse2022_bib">
 <pre xml:space="preserve">
 @article{SimSiamCollapse,
      title={Understanding Collapse in Non-Contrastive 
@@ -312,6 +318,11 @@
                 </td>
                 </tr>
             </table>
+          <br><hr>
+          <center id="acknowledgements"><h1>Acknowledgements</h1></center>
+          <div style="width:800px; margin:0 auto; text-align:left;">
+          This work was supported in part by the NSF GRFP (grants DGE1745016 and DGE2140739), NSF IIS-2024594, and ONR N00014-22-1-2096.
+          </div>
           <br><hr>
       </table>
 
